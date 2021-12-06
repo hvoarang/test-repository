@@ -20,6 +20,10 @@ if (num < 49) {
 
 num === 50 ? console.log("Ok!") : console.log("Error");
 
+//  Строгое сравнение
+
+// break & continue - Создает выход из цикла или продолжает его с помощью "continue"
+
 const num = 50;
 
 switch (num) {
@@ -35,4 +39,25 @@ switch (num) {
     default:
         console.log("Not this time!");
         break;
+}
+
+//break
+
+for (var i = 0; i < 10; i++) {
+    console.log("i = " + i);
+    if (i == 5) break;
+}
+// c ontinue
+
+for (var i = 0; i < 10; i++) {
+    if (i == 5) continue;
+    console.log("i = " + i);
+}
+
+//  continue заменить фигурными скобками
+
+for (var i = 0; i < 10; i++) {
+    if (!(i % 2 == 0)) {
+        console.log("i = " + i);
+    }
 }
