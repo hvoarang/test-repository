@@ -50,3 +50,12 @@ if (personalMovieDB.count < 10) {
     console.log("Ошибка");
 }
 console.log(personalMovieDB);
+
+let num = 20;
+
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+}
+showFirstMessage("Hello");
+console.log(num);
