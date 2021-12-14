@@ -56,7 +56,7 @@ for (var i = 0; i < 10; i++) {
 
 //  continue заменить фигурными скобками
 
-for (var i = 0; i < 10; i++) {
+for (var i = 1; i < 20; i++) {
     if (!(i % 2 == 0)) {
         console.log("i = " + i);
     }

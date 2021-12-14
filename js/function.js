@@ -51,11 +51,26 @@ if (personalMovieDB.count < 10) {
 }
 console.log(personalMovieDB);
 
+///////////////////
+
 let num = 20;
 
 function showFirstMessage(text) {
     console.log(text);
-    let num = 10;
+    let num = "text";
+    console.log(num);
 }
-showFirstMessage("Hello");
-console.log(num);
+window.showFirstMessage();
+// console.log(num);
+
+// let message = "hello";
+// console.log(message);
+
+// function sayHai() {
+//     console.log(name);
+//     console.log(age);
+//     var name = "Lyda";
+//     let age = 21;
+// }
+
+// sayHai();
