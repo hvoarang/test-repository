@@ -21,3 +21,9 @@ const num = 12.2;
 console.log(Math.round(num));
 
 const test = "12.2px";
+// console.log(parseInt(test));
+console.log(parseFloat(test));
+
+let num = 15;
+
+for (num = 10, <= 15)
