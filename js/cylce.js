@@ -169,64 +169,30 @@ let sum = 0;
 for (let key in obj) sum += obj[key];
 console.log(sum);
 
-/*Задача 4
-Дан следующий массив:
-Вручную, без цикла, найдите сумму элементов этого массива.*/
-let arr = [
-    [1, 2, 3, [4, 5, [6, 7]]],
-    [8, [9, 10]],
-];
-let sum =
-    arr[0][0] +
-    arr[0][1] +
-    arr[0][2] +
-    arr[0][3][0] +
-    arr[0][3][1] +
-    arr[0][3][2][0] +
-    arr[0][3][2][1] +
-    arr[1][0] +
-    arr[1][1][0] +
-    arr[1][1][1];
-console.log(sum); //55
-
-for (let i = 0, j = 0; i <= 9; i++, j += 2) {
-    console.log(i, j * i++);
-}
+// Задача 1
+// Дан массив с числами. Запустите цикл, который будет по очереди выводить элементы
+// этого массива в консоль до тех пор, пока не встретится элемент со значением 0.
+// После этого цикл должен завершить свою работу.
 
 let arr = [9, 8, 7, 5, 0, 6, 4, 3, 2, 1];
-for (let elem of arr) {
-    if (elem == [0]) {
-        console.log("есть0");
-        break; // выйдем из цикла
-    }
-}
-
-let a12354rr = [9, 8, 7, 5, 0, 6, 4, 3, 2, 1];
-for (let i = 0; i <= 9; i++)
-    if ((i = 0)) {
-        console.log(i);
+for (i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    if (arr[i] == 0) {
+        console.log("");
         break;
     }
+}
 
-let obj = {
-    key1: { a: 1, b: 2, c: { d: 3, e: 4 }, f: 5 },
-    key2: { g: 6, h: 7 },
-};
-//Найдите сумму всех элементов - чисел.
-function sumInObj(obj) {
-    let result = 0;
-    if (typeof obj == "object") {
-        for (let key in obj) {
-            if (typeof obj[key] != "object") {
-                result += obj[key];
-            } else {
-                let subObj = obj[key];
-                result += sumInObj(subObj);
-            }
-        }
-        return result;
-    } else {
-        return obj;
+/*Задача 2
+Дан массив с числами. Найдите сумму элементов, расположенных от начала массива до 
+первого отрицательного числа.*/
+
+let arr = [9, 8, 7, 5, 1, 6, 4, -3, 6, 1];
+
+let sum = 0;
+for (i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    if (arr[i] >= 0) {
+        break;
     }
 }
-console.log(sumInObj(obj));
