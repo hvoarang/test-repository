@@ -190,9 +190,24 @@ for (i = 0; i < arr.length; i++) {
 let arr = [9, 8, 7, 5, 1, 6, 4, -3, 6, 1];
 
 let sum = 0;
-for (i = 0; i < arr.length; i++) {
-    sum += arr[i];
-    if (arr[i] >= 0) {
+for (let elem of arr) {
+    if (elem >= 0) {
+        sum += elem;
+    } else {
+        break;
+    }
+}
+console.log(sum);
+
+/*Задача 3
+Дан массив с числами. Найдите позицию первого числа 3 в этом массиве 
+(считаем, что это число обязательно есть в массиве).*/
+
+let arr = [9, 8, 7, 5, 0, 6, 4, 3, 6, 1];
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == 3) {
+        console.log(i);
         break;
     }
 }
