@@ -211,3 +211,143 @@ for (let i = 0; i < arr.length; i++) {
         break;
     }
 }
+
+/*Задача 4
+Определите, сколько целых чисел, начиная с числа 1, нужно сложить, 
+чтобы сумма получилась больше 100.*/
+
+// let arr = [10, 20, 30, 12, 40, 50, 10];
+
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//     if (sum >= 90) {
+//         console.log(sum);
+//         break;
+//     }
+// }
+
+let arr = [10, 20, 30, 12, 40, 50, 10];
+
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    if (sum >= 100) {
+        console.log(sum);
+        break;
+    }
+}
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let elem of arr) {
+    let result;
+    if (elem % 2 === 0) {
+        result = elem * elem;
+        console.log(result);
+    } else if (elem % 3 === 0) {
+        result = elem * elem * elem;
+        console.log(result);
+    }
+} //4, 27, 16, 36, 64, 729
+
+/*Задача 3
+Дан следующий массив:
+Найдите квадратный корень из суммы кубов его элементов. Для решения 
+воспользуйтесь циклом for.*/
+
+let num = 397;
+let sum3 = 0;
+for (let sum of num) {
+    sum3 += Math.pow(sum, 3);
+}
+console.log(Math.sqrt(sum3)); //101.25709851659784
+
+var array = [1, 2, 3, 4, 5];
+var result = 0;
+
+for (let i = 0; i < array.length; i++) {
+    result += array[i] ** 3;
+}
+console.log(Math.sqrt(result));
+
+const arr = [1, 2, 3, 4, 5, 6];
+
+arr.push(10);
+console.log(arr);
+
+function first() {
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    setTimeout(function() {
+        console.log(2);
+    }, 490);
+}
+first(1);
+second(2);
+
+function learnJs(lang, callback, learn) {
+    console.log(`Я учу; ${lang}, bro`);
+    callback();
+}
+learnJs("JavaScript", function() {
+    console.log("done");
+});
+
+function one() {
+    setTimeout(function() {
+        console.log("true");
+    }, 500);
+}
+
+function two() {
+    setTimeout(function() {
+        console.log("false");
+    }, 400);
+}
+
+one(1);
+two(2);
+
+let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+console.log(arr.length);
+
+arr.push(5);
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+for (let value of arr) {
+    console.log(value);
+}
+
+let arr = [1, 2, 3];
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+});
+
+let inc = (function() {
+    let counter = 0;
+    return function() {
+        counter++;
+    };
+})();
+
+inc();
+inc();
+
+let arr = [1, 2, 3, 4];
+
+for (let i = 0; i < arr.length; i++) console.log(i);
+
+let arr = [1, "2", 3, 4, 5];
+for (let i = 0; i < arr.length; i++)
+    console.log(
+        `Название товара ${("2", arr)} и Название массива c элементами в столбик`
+    );
+typeof i;
+
+[] + false - null + true;
